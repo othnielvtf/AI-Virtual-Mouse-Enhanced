@@ -33,8 +33,8 @@ The application uses:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/gokulnpc/AI-Virtual-Mouse.git
-   cd AI-Virtual-Mouse
+   git clone https://github.com/othnielvtf/AI-Virtual-Mouse-Enhanced.git
+   cd AI-Virtual-Mouse-Enhanced
    ```
 
 2. **Install dependencies**
