@@ -142,7 +142,7 @@ while True:
             y3 = np.interp(y_palm, (frameR, hCam-frameR), (0, hScr))
             clocX = plocX + (x3-plocX) / smoothening
             clocY = plocY + (y3-plocY) / smoothening
-            autopy.mouse.move(wScr-clocX, clocY)
+            autopy.mouse.move(clocX, clocY)
             cv2.circle(img, (x_palm, y_palm), 15, (255, 0, 255), cv2.FILLED)
             plocX, plocY = clocX, clocY
 
@@ -177,7 +177,7 @@ while True:
                     autopy.mouse.toggle(down=True)
                     isDragging = True
                 
-                autopy.mouse.move(wScr-clocX, clocY)
+                autopy.mouse.move(clocX, clocY)
                 cv2.circle(img, (x_palm, y_palm), 15, (0, 255, 0), cv2.FILLED)
                 cv2.putText(img, "DRAG", (x_palm - 30, y_palm - 30), 
                            cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
